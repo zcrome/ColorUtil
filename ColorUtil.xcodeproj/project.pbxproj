@@ -10,6 +10,7 @@
 		91EDA5EB20CAEA5F007ED7A5 /* ColorUtil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91EDA5E120CAEA5E007ED7A5 /* ColorUtil.framework */; };
 		91EDA5F020CAEA5F007ED7A5 /* ColorUtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EDA5EF20CAEA5F007ED7A5 /* ColorUtilTests.swift */; };
 		91EDA5F220CAEA5F007ED7A5 /* ColorUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 91EDA5E420CAEA5E007ED7A5 /* ColorUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91EDA5FC20CAEA6C007ED7A5 /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EDA5FB20CAEA6C007ED7A5 /* ColorUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		91EDA5EA20CAEA5F007ED7A5 /* ColorUtilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorUtilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91EDA5EF20CAEA5F007ED7A5 /* ColorUtilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtilTests.swift; sourceTree = "<group>"; };
 		91EDA5F120CAEA5F007ED7A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91EDA5FB20CAEA6C007ED7A5 /* ColorUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				91EDA5E420CAEA5E007ED7A5 /* ColorUtil.h */,
 				91EDA5E520CAEA5E007ED7A5 /* Info.plist */,
+				91EDA5FB20CAEA6C007ED7A5 /* ColorUtil.swift */,
 			);
 			path = ColorUtil;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					91EDA5E020CAEA5E007ED7A5 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 					91EDA5E920CAEA5F007ED7A5 = {
 						CreatedOnToolsVersion = 9.4;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91EDA5FC20CAEA6C007ED7A5 /* ColorUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +344,7 @@
 		91EDA5F620CAEA5F007ED7A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.zcrome.ColorUtil;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		91EDA5F720CAEA5F007ED7A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +397,7 @@
 		91EDA5F920CAEA5F007ED7A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ED5F6DV8X9;
 				INFOPLIST_FILE = ColorUtilTests/Info.plist;
@@ -407,6 +416,7 @@
 		91EDA5FA20CAEA5F007ED7A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ED5F6DV8X9;
 				INFOPLIST_FILE = ColorUtilTests/Info.plist;
